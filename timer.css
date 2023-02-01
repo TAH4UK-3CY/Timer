@@ -1,0 +1,101 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__block {
+  width: 150px;
+}
+.timer__block .time {
+  background-color: #2987be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  font-size: 95px;
+  border-radius: 10px;
+}
+.timer__block .title {
+  background-color: #1859b8;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.buttons .button {
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 18px;
+  width: 180px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.buttons .button.start, .buttons .button.stop, .buttons .button.new {
+  color: #2987be;
+}
+.buttons .button.start:hover, .buttons .button.stop:hover, .buttons .button.new:hover {
+  background-color: #1859b8;
+  color: white;
+}
+.buttons .button.pause {
+  color: #2987be;
+}
+.buttons .button.pause:hover {
+  background-color: #E93888;
+  color: white;
+}
+
+.results {
+  padding-top: 30px;
+  display: flex;
+  width: 500px;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.results__title {
+  font-size: 40px;
+  padding: 15px 50px;
+  border: 2px solid #2987be;
+  color: #2987be;
+  margin-bottom: 20px;
+}
+.results__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.results__block {
+  padding: 25px 50px;
+  color: #1859b8;
+  border: 2px solid #1859b8;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=timer.css.map */

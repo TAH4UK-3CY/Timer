@@ -63,7 +63,6 @@ stopButton.addEventListener("click",()=>{
     milisecondElement.innerHTML="00";
 })
 newButton.addEventListener("click",()=>{
-    clearInterval(interval);
     const block = document.createElement("div");
     block.innerHTML=`Result: ${addZero(hour)} ${addZero(minute)} ${addZero(second)} ${addZero(milisecond)}`;
     block.classList.add("results__block");
